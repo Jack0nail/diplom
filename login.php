@@ -64,7 +64,7 @@ if(isset($_POST['submit']))
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">DT-college</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -81,19 +81,21 @@ if(isset($_POST['submit']))
       <div class="col align-self-center">
         <form method="post">
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
+            <h1 class="mb-5 text-center"> Log in </h1>
+            <label for="exampleInputEmail1">login</label>
             <input name="login"type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <small id="emailHelp" class="form-text text-muted">Enter your login.</small>
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
-            <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+            <input name="password" type="password" class="form-control" id="exampleInputPassword1" aria-describedby="passHelp">
+            <small id="passHelp" class="form-text text-muted">Enter your password.</small>
           </div>
           <div class="form-group form-check">
             <input name = "not_attach_ip" type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Прикрепить ip (для безопасности)</label>
-          </div>
-          <button name="submit" type="submit" class="btn btn-success">Submit</button>
+          </div>      
+              <button name="submit" type="submit" class="btn btn-success">sign in</button>
         </form>
       </div>
       <div class="col align-self-end">
